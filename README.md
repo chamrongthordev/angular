@@ -18,3 +18,9 @@ The architecture of Angular are building by these block. There are :
 - `ng new my-first-project`: generates new ng project
 - `cd my-first-project`: access project directory
 - `ng serve`: serve ng project
+
+# Template fundamental
+Interpolation: allows angular bind angular component properties to angular template.
+example:
+- `{{ title }}`: in template <br>
+- ` title = "Chamrong"` in component
