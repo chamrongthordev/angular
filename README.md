@@ -34,3 +34,8 @@ example:
 example:
 - `<input (click)= 'handleClick($event)'>`: in template
 - `handleClick($event: any) { console.log($event.target.value) }`: in component
+
+`Two way binding`: allows angular bind between angular component and template in a single binding.
+example:
+- `<input [ngModel]= 'name' (ngModel) = 'handleInputName($event)'>` or `<input [(ngModel)] = 'name'>`: in template
+- `name: string = ''`: in component
