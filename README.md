@@ -39,3 +39,8 @@ example:
 example:
 - `<input [ngModel]= 'name' (ngModel) = 'handleInputName($event)'>` or `<input [(ngModel)] = 'name'>`: in template
 - `name: string = ''`: in component
+
+`Template ref variable`: allows angular copy value from one element to other elements
+example:
+- `<input type='text' #searchTerm/>`: declare ref variable
+- `<button (click)='handleSearch(searchTerm.value)'`: get value from input by `searchTerm` ref variable

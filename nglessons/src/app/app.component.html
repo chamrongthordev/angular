@@ -1,14 +1,10 @@
 <div class="center">
   <div class="center-box">
     <div id="form">
-      <label for="searchBox">Search</label>
-      <input type="text" id="searchBox" [ngModel]="searchTerm" (ngModelChange)="handleInput($event)" [value]="searchTerm">
-      <input type="text" id="searchBox2" [(ngModel)]="searchTerm" [value]="searchTerm">
-
+      <input type="text" #searchTermA>
+      <button (click)="handleInput(searchTermA.value)">Search</button>
       <h3>Preview</h3>
-      <p>
-        {{searchTerm}}
-      </p>
+      <p>{{searchTerm}}</p>
     </div>
   </div>
 </div>
