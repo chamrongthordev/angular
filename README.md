@@ -29,3 +29,8 @@ example:
 example:
 - `link: string = 'https://chamrong.com/` in component
 - `<element [src]= 'link'></element>` in template
+
+`Event binding`: allows angular bind angular template $event to angular component property.
+example:
+- `<input (click)= 'handleClick($event)'>`: in template
+- `handleClick($event: any) { console.log($event.target.value) }`: in component
