@@ -57,4 +57,10 @@ example:
 
 `*ngIf`: used for check condition on template. <br>
 example:
+
 - `<element *ngIf= 'true'>...</element>`: if the condition is true, this element will visible.
+
+`*ngFor`: used for iterating the collection.
+example: 
+
+`<tr *ngFor='let user of users'>{{user.name}}</tr>`: iterates a collections of user.
