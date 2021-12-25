@@ -4,7 +4,7 @@
       <input type="text" #searchTermA>
       <button (click)="handleInput(searchTermA.value)">Search</button>
       <h3>Preview</h3>
-      <p>{{searchTerm}}</p>
+      <p *ngIf="searchTerm.length >= 3">Search for: {{searchTerm}}</p>
     </div>
   </div>
 </div>
