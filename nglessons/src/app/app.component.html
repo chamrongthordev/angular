@@ -1,14 +1,13 @@
 <div class="center">
   <div class="center-box">
     <div id="form">
-      <label for="name">Name: </label>
-      <input type="text" id="name" [value]="name"> <br>
+      <label for="searchBox">Search</label>
+      <input type="text" id="searchBox" (blur)='handleSearch($event)' (input)="handleInput($event)">
 
-      <label for="gender">Gender: </label>
-      <input type="text" id="gender" [value]="gender">
-
-      <label for="age">Age: </label>
-      <input type="text" id="age" [value]="age">
+      <h3>Preview</h3>
+      <p>
+        {{resultRequesting}}
+      </p>
     </div>
   </div>
 </div>

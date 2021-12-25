@@ -6,8 +6,14 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngLessons';
-  name: string = 'Chamrong';
-  gender: string = 'M';
-  age: number = 21;
+  searchTerm: string = '';
+  resultRequesting: string = '';
+
+  handleSearch($event: any) {
+    this.searchTerm = $event.target.value;
+  }
+
+  handleInput($event: any) {
+    this.resultRequesting = $event.target.value;
+  }
 }
