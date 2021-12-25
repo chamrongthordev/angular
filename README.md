@@ -20,7 +20,12 @@ The architecture of Angular are building by these block. There are :
 - `ng serve`: serve ng project
 
 # Template fundamental
-Interpolation: allows angular bind angular component properties to angular template.
+`Interpolation`: allows angular bind angular component properties to angular template (inside element's content).
 example:
+- ` title = "Chamrong"` in component.
 - `{{ title }}`: in template <br>
-- ` title = "Chamrong"` in component
+
+`Property binding`: allows angular bind angular component properties to angular template (inside element's attribute).
+example:
+- `link: string = 'https://chamrong.com/` in component
+- `<element [src]= 'link'></element>` in template
