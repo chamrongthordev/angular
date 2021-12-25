@@ -7,13 +7,8 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   searchTerm: string = '';
-  resultRequesting: string = '';
 
-  handleSearch($event: any) {
-    this.searchTerm = $event.target.value;
-  }
-
-  handleInput($event: any) {
-    this.resultRequesting = $event.target.value;
+  handleInput($event: string) {
+    this.searchTerm = $event;
   }
 }

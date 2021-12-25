@@ -2,11 +2,12 @@
   <div class="center-box">
     <div id="form">
       <label for="searchBox">Search</label>
-      <input type="text" id="searchBox" (blur)='handleSearch($event)' (input)="handleInput($event)">
+      <input type="text" id="searchBox" [ngModel]="searchTerm" (ngModelChange)="handleInput($event)" [value]="searchTerm">
+      <input type="text" id="searchBox2" [(ngModel)]="searchTerm" [value]="searchTerm">
 
       <h3>Preview</h3>
       <p>
-        {{resultRequesting}}
+        {{searchTerm}}
       </p>
     </div>
   </div>
