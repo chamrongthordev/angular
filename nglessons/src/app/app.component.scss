@@ -1,0 +1,15 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: dodgerblue;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.center-box {
+  display: block;
+  width: 50px;
+  padding: 40px;
+}
